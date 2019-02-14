@@ -7,84 +7,6 @@
         "info": ""
     },
     {
-        "id": "3c1931d3.e2d246",
-        "type": "http in",
-        "z": "dea81e80.168c9",
-        "name": "",
-        "url": "/hello-file",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 130,
-        "y": 100,
-        "wires": [
-            [
-                "98a70b3d.61b66"
-            ]
-        ]
-    },
-    {
-        "id": "98a70b3d.61b66",
-        "type": "file in",
-        "z": "dea81e80.168c9",
-        "name": "",
-        "filename": "/home/pi/httpstatic/picture.jpg",
-        "format": "",
-        "sendError": true,
-        "x": 360,
-        "y": 100,
-        "wires": [
-            [
-                "43be8955.79e768"
-            ]
-        ]
-    },
-    {
-        "id": "43be8955.79e768",
-        "type": "change",
-        "z": "dea81e80.168c9",
-        "name": "Set Headers",
-        "rules": [
-            {
-                "t": "set",
-                "p": "headers",
-                "pt": "msg",
-                "to": "{}",
-                "tot": "json"
-            },
-            {
-                "t": "set",
-                "p": "headers.content-type",
-                "pt": "msg",
-                "to": "image/png",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 590,
-        "y": 100,
-        "wires": [
-            [
-                "873419ae.5defe8"
-            ]
-        ]
-    },
-    {
-        "id": "873419ae.5defe8",
-        "type": "http response",
-        "z": "dea81e80.168c9",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 750,
-        "y": 100,
-        "wires": []
-    },
-    {
         "id": "f71408a5.4736c8",
         "type": "rpi-sensehat in",
         "z": "dea81e80.168c9",
@@ -92,12 +14,13 @@
         "motion": false,
         "env": true,
         "stick": false,
-        "x": 180,
-        "y": 360,
+        "x": 330,
+        "y": 80,
         "wires": [
             [
                 "ca426bd2.5bd1a8",
-                "c37f707e.47cfd"
+                "c37f707e.47cfd",
+                "10991eea.389bb1"
             ]
         ]
     },
@@ -114,8 +37,8 @@
         "title": "Temperature Gauge",
         "label": "Degrees Celcius",
         "format": "{{msg.payload.temperature}}",
-        "min": 0,
-        "max": "30",
+        "min": "-20",
+        "max": "40",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -123,8 +46,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 500,
-        "y": 360,
+        "x": 580,
+        "y": 40,
         "wires": []
     },
     {
@@ -139,8 +62,8 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 270,
-        "y": 720,
+        "x": 330,
+        "y": 200,
         "wires": [
             [
                 "efe69723.4b4048"
@@ -158,8 +81,8 @@
         "timer": "2",
         "oldrc": false,
         "name": "",
-        "x": 780,
-        "y": 720,
+        "x": 720,
+        "y": 200,
         "wires": [
             [],
             [],
@@ -188,8 +111,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 480,
-        "y": 400,
+        "x": 560,
+        "y": 80,
         "wires": []
     },
     {
@@ -206,7 +129,7 @@
         "fwdInMessages": true,
         "templateScope": "local",
         "x": 540,
-        "y": 820,
+        "y": 300,
         "wires": [
             []
         ]
@@ -223,13 +146,69 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 270,
-        "y": 820,
+        "x": 330,
+        "y": 300,
         "wires": [
             [
                 "1a875bfe.06ca54"
             ]
         ]
+    },
+    {
+        "id": "10991eea.389bb1",
+        "type": "ui_gauge",
+        "z": "dea81e80.168c9",
+        "name": "",
+        "group": "2b6ae8d3.27a5d8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Air Pressure Gauge",
+        "label": "Millibar (mbar)",
+        "format": "{{msg.payload.pressure}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "3dc1261f.8fb1fa",
+        "type": "comment",
+        "z": "dea81e80.168c9",
+        "name": "Command repeater",
+        "info": "These two nodes do the following:\n\nThe repeater sends a signal every 10 seconds\n(does not matter what signal)\nthe signal triggers the command node\n\nThe command node gets a signal and executes the\ncommand, the command in this node is for using\nthe pi's connected webcamera to take a screenshot\nand save it as picture.jpg under home/pi/httpstatic",
+        "x": 130,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f5ff9ef5.eef34",
+        "type": "comment",
+        "z": "dea81e80.168c9",
+        "name": "Picture url refresher",
+        "info": "The picture URL refresher has two nodes,\n\nThe timestamp node sends a timestamp to the\ntemplate node every 10 seconds\n\nThe template node is displaying an image with \na source of /picture.jpg?{{msg.payload}} \nThis refers to the picture.jpg stored under \n/home/pi/httpstatic and the {{msg.payload}} takes \nthe timestamp from the timestamp node and puts it\nin the source url AFTER the questionmark.\n\n\n^ Without the URL refresh the browser would simply\ncache the image, and even when asked to refresh\nit would see that the source of the image is the\nsame, and thus not refresh the image. (unless the\nentire page is loaded again by MANUALLY refreshing)",
+        "x": 130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "32db32cc.9f627e",
+        "type": "comment",
+        "z": "dea81e80.168c9",
+        "name": "Gauges",
+        "info": "Pretty simple, Sense HAT node gathers data\nfrom the raspberry pi's sense hat and sends\nseveral variables\n\nThe gauges pick up on certain variables to display\nTemperature, Humidity and Air Pressure",
+        "x": 90,
+        "y": 80,
+        "wires": []
     },
     {
         "id": "2b6ae8d3.27a5d8",
@@ -246,7 +225,7 @@
         "id": "8aee0adf.364888",
         "type": "ui_group",
         "z": "",
-        "name": "MAIN GROUP",
+        "name": "Live image",
         "tab": "81353706.743708",
         "order": 1,
         "disp": true,
