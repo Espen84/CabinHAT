@@ -64,11 +64,11 @@
 	</nav>
 
 
-	<div class="container border rounded p-2 mt-3">
+	<div class="container border rounded py-2 px-4 mt-3">
 		<h1 class="display-4">Cabin dashboard for Vegard</h1>
-		<button class="btn btn-sm btn-warning mb-2" onclick="getImage()">Refresh image</button>
+		<button class="btn btn-sm btn-warning mb-2" onclick="refreshImage()">Refresh image</button>
 		<div class="row">
-			<img class="col-9" src="http://192.168.1.14:5000/get_image">
+			<img class="col-9" id="image"  src="/get_image">
 			<div class="col-3">
 				<div class="container border rounded py-3 px-5">
 					<div class="d-flex justify-content-center"><button class="btn btn-warning" onclick="getTemp()">Refresh data</button></div>
@@ -156,12 +156,16 @@
 		getTemp();
 	});
 
+function refreshImage() {
+	$('#image').attr('src', '/get_image?'+ new Date().getTime());
+}
+
 function getTemp() {
-	$.getJSON('http://localhost:5000/json', function(data) {
+	$.getJSON('/json', function(data) {
 		console.log(data);
 		$('#temp').text(data.temp);
 		$('#humidity').text(data.humidity);
-		$('#pressure').text(data.airpressure);
+		$('#pressure').text(data.pressure);
 	});
 }
 </script>

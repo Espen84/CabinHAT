@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, render_template, send_file
 from sense_hat import SenseHat
-from picamera
+from picamera.camera import PiCamera
 
 app = Flask(__name__)
 
@@ -12,15 +12,19 @@ def index():
 def json():
     sense = SenseHat()
 
-    return jsonify(name='Vegard Alvsaker', telephone='454 82 059', temp=sense.get_temperature())
+    return jsonify(name='Vegard Alvsaker', telephone='454 82 059', temp=round(sense.get_temperature(),2), humidity=round(sense.get_humidity(),2), pressure=round(sense.get_pressure(),2))
 
 @app.route('/get_image')
 def get_image():
-    camera = picamera.PiCamera()
+    camera = PiCamera()
 
-    camera.capture()
+    camera.capture("ronny.jpg")
     camera.close()
     return send_file('ronny.jpg', mimetype='image/gif')
+
+@app.route('/get_image2')
+def get_image2():
+    return send_file('photo1.JPEG', mimetype='image/gif')
 
 
 if __name__ == '__main__':
