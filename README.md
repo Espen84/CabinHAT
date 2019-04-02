@@ -61,6 +61,9 @@ This to help the user determine if there is something wrong at the location wher
 
 ## Contribute
 
+Want to contribute to the project? 
+See [CONTRIBUTE.md](https://github.com/Espen84/CabinHAT/blob/master/CONTRIBUTE.md).
+
 ## Developers 
 
 + Aarsheim. Gorm-Erik
