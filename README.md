@@ -24,6 +24,7 @@ The purpose of this project is to provide an open source system for monitoring t
 + humidity
 + air pressure 
 + real time pictures  
+
 This to help the user determine if there is something wrong at the location, where the SenseHAT is deployed. 
 
 ## License
