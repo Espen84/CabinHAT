@@ -73,4 +73,6 @@ This to help the user determine if there is something wrong at the location wher
 
 ## Acknowledgements 
 
+## Final Notes 
 
+For more, please visit the [Wikii](https://github.com/Espen84/CabinHAT.wiki.git)
