@@ -21,11 +21,11 @@ Open Source Project using Raspberry Pi's with sense HAT modules to read temperat
 
  
 ## Technologies
-+ Rasberry Pi 3 or 3+
-+ Sense HAT module
-+ Camera compatible w/ Raspberry Pi (module or USB webcam)
-+ Python 3.5 or higher
-+ database for storage and retrieving of data
++ [Rasberry Pi 3 or 3+](https://www.raspberrypi.org/products/)
++ [Sense HAT module](https://www.raspberrypi.org/products/sense-hat/)
++ [Camera compatible w/ Raspberry Pi (module or USB webcam)](https://www.raspberrypi.org/products/camera-module-v2/)
++ [Python 3.5 or higher](https://www.python.org/downloads/)
++ [SQLite](https://www.sqlite.org/index.html)
  
 ## Intention
 
