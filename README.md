@@ -63,10 +63,13 @@ This to help the user determine if there is something wrong at the location, whe
 
 ## Developers 
 
-Aarsheim. Gorm-Erik
-Alvsaker. Vegard
-Fosse. Ingve
-Oftedal. Espen Sivertsen
++ Aarsheim. Gorm-Erik
+
++ Alvsaker. Vegard
+
++ Fosse. Ingve
+
++ Oftedal. Espen Sivertsen
 
 ## Acknowledgements 
 
