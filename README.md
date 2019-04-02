@@ -33,10 +33,10 @@ The purpose of this project is to provide an open source solution for monitoring
 [Sense HAT](https://www.raspberrypi.org/products/sense-hat/),
 [Flask](http://flask.pocoo.org/) and 
 [SQLite](https://www.sqlite.org/index.html), to deliver data such as:
-+ temperature
-+ humidity
-+ air pressure 
-+ real time pictures  
++ [Temperature](https://en.wikipedia.org/wiki/Temperature)
++ [Humidity](https://en.wikipedia.org/wiki/Humidity)
++ [Air pressure](https://en.wikipedia.org/wiki/Atmospheric_pressure)
++ Real time pictures  
 
 This to help the user determine if there is something wrong at the location where the SenseHAT is deployed, and if maintenance needs to be performed. 
 
