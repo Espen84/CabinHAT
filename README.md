@@ -29,7 +29,7 @@ Open Source Project using Raspberry Pi's with sense HAT modules to read temperat
  
 ## Intention
 
-The purpose of this project is to provide an open source system for monitoring the status of a cabin, or whatever the user desires to monitor.  CabinHAT is a product that uses [Raspberry Pi](https://www.raspberrypi.org/),
+The purpose of this project is to provide an open source solution for monitoring the status of a cabin, or whatever the user desires to monitor.  CabinHAT is a product that uses [Raspberry Pi](https://www.raspberrypi.org/),
 [Sense HAT](https://www.raspberrypi.org/products/sense-hat/),
 [Flask](http://flask.pocoo.org/) and 
 [SQLite](https://www.sqlite.org/index.html), to deliver data such as:
