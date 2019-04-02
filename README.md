@@ -3,19 +3,19 @@ Open Source Project using Raspberry Pi's with sense HAT modules to read temperat
 
 ## Content
 
-[Technologies](https://github.com/Espen84/CabinHAT#technologies)
+1. [Technologies](https://github.com/Espen84/CabinHAT#technologies)
 
-[Intent](https://github.com/Espen84/CabinHAT#intent)
+2. [Intent](https://github.com/Espen84/CabinHAT#intent)
 
-[License](https://github.com/Espen84/CabinHAT#license)
+3. [License](https://github.com/Espen84/CabinHAT#license)
 
-[Installation](https://github.com/Espen84/CabinHAT#installation)
+4. [Installation](https://github.com/Espen84/CabinHAT#installation)
 
-[Contribute](https://github.com/Espen84/CabinHAT#contribute)
+5. [Contribute](https://github.com/Espen84/CabinHAT#contribute)
 
-[Developers](https://github.com/Espen84/CabinHAT#developers)
+6. [Developers](https://github.com/Espen84/CabinHAT#developers)
 
-[Acknowledgements](https://github.com/Espen84/CabinHAT#acknowledgements)
+7. [Acknowledgements](https://github.com/Espen84/CabinHAT#acknowledgements)
 
 []()
 
