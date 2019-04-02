@@ -46,7 +46,7 @@ This to help the user determine if there is something wrong at the location wher
 + [SQLite](https://www.sqlite.org/copyright.html) use a Creative Commons (CC) license.
 
 + [Raspberry Pi’s schematics](https://www.raspberrypi.org/app/uploads/2012/04/Raspberry-Pi-Schematics-R1.0.pdf) and 
-  [Gerbers (visualisation of the circuits)](https://www.raspberrypi.org/blog/final-pcb-artwork/) are freely available.
+  [Gerbers (visualization of the circuits)](https://www.raspberrypi.org/blog/final-pcb-artwork/) are freely available.
 
 + [ARM CPUs](https://www.raspberrypi.org/documentation/faqs/) used in Raspberry Pi, are not Open Source. 
 
