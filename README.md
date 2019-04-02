@@ -59,3 +59,15 @@ This to help the user determine if there is something wrong at the location, whe
  
 ## Installation
 
+## Contribute
+
+## Developers 
+
+Aarsheim. Gorm-Erik
+Alvsaker. Vegard
+Fosse. Ingve
+Oftedal. Espen Sivertsen
+
+## Acknowledgements 
+
+
