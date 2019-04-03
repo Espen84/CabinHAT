@@ -1,14 +1,17 @@
 from flask import Flask, jsonify, render_template, send_file
+import datetime
 from sense_hat import SenseHat
 from picamera.camera import PiCamera
-from utils.utils import get_week_history
+from utils.utils import get_week_history, days_dict
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
+    now = datetime.datetime.now()
+    days = days_dict[now.strftime("%A")]
     history = get_week_history()
-    return render_template('index.html', history=history)
+    return render_template('index.html', history=history, days=days)
 
 @app.route('/json')
 def json():

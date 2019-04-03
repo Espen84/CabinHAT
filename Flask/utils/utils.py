@@ -1,5 +1,15 @@
 import sqlite3
 
+days_dict = {
+    'Monday':   ['Today', 'Sunday', 'Saturday', 'Friday', 'Thursday', 'Wednesday', 'Tuesday'],
+    'Sunday':   ['Today', 'Saturday', 'Friday', 'Thursday', 'Wednesday', 'Tuesday', 'Monday'],
+    'Saturday': ['Today', 'Friday', 'Thursday', 'Wednesday', 'Tuesday', 'Monday', 'Sunday'],
+    'Friday':   ['Today', 'Thursday', 'Wednesday', 'Tuesday', 'Monday', 'Sunday', 'Saturday'],
+    'Thursday': ['Today', 'Wednesday', 'Tuesday', 'Monday', 'Sunday', 'Saturday', 'Friday'],
+    'Wednesday':['Today', 'Tuesday', 'Monday', 'Sunday', 'Saturday', 'Friday', 'Thursday'],
+    'Tuesday':  ['Today', 'Monday', 'Sunday', 'Saturday', 'Friday', 'Thursday', 'Wednesday'] 
+}
+
 def get_week_history():
     history = []
     for i in range(7):
