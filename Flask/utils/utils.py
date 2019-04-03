@@ -29,13 +29,13 @@ def get_day_history(days_ago):
     c = conn.cursor()
 
     if days_ago == 0:
-        c.execute(" SELECT * FROM weather WHERE datetime LIKE (SELECT DATE('now', '0 day')) ")
+        c.execute(" SELECT * FROM weather WHERE datetime LIKE (SELECT DATE('now', '0 day')) || '%' ")
     else:
         start = '-' + str(days_ago) + ' day'
         days = {'start': start}
         c.execute("""   SELECT * FROM weather
                         WHERE datetime LIKE
-                        (SELECT DATE('now', :start))
+                        (SELECT DATE('now', :start)) || '%'
         """, days)
     temp_array = []
     humid_array = []
@@ -68,4 +68,3 @@ def get_day_history(days_ago):
 
     return {'temp': avg_temp, 'humid': avg_humid, 'pressure': avg_pressure}
 
-get_week_history()

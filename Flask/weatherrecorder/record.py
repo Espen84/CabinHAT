@@ -2,6 +2,7 @@ from sense_hat import SenseHat
 import sqlite3
 import os
 import time
+import datetime
 
 #if os.path.isfile('./cabinhat.db')
 conn = sqlite3.connect('../db/cabinhat.db')
@@ -31,14 +32,16 @@ while True:
     humid = sense.get_humidity()
     pressure = sense.get_pressure()
     
-    conn = sqlite3.connect('cabinhat.db')
+    conn = sqlite3.connect('../db/cabinhat.db')
     c = conn.cursor()
     c.execute("INSERT INTO weather VALUES (:type, :value, DateTime('now'))", get_dict('Temp', temp))
     c.execute("INSERT INTO weather VALUES (:type, :value, DateTime('now'))", get_dict('Humid', humid))
     c.execute("INSERT INTO weather VALUES (:type, :value, DateTime('now'))", get_dict('Pressure', pressure))
     conn.commit()
     conn.close()
-    time.sleep(5)
+    print(datetime.datetime.now())
+    print('Weather data recorded. Sleeping 30 minutes')
+    time.sleep(1800)
     
 
 
