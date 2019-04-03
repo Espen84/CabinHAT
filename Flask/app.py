@@ -9,7 +9,9 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     now = datetime.datetime.now()
+    #Gets the correct order of day names for the history table
     days = days_dict[now.strftime("%A")]
+    #History is the weather data
     history = get_week_history()
     return render_template('index.html', history=history, days=days)
 
