@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('cabinhat.db')
+conn = sqlite3.connect('../db/cabinhat.db')
 
 c = conn.cursor()
 
