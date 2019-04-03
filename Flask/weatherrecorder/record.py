@@ -41,8 +41,5 @@ while True:
     conn.close()
     print(datetime.datetime.now())
     print('Weather data recorded. Sleeping 30 minutes')
-    time.sleep(1800)
+    time.sleep(1800) #Change the parameter of time.sleep() to change interval time (seconds) for recordings. 
     
-
-
-
