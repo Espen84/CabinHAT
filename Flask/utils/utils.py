@@ -1,5 +1,6 @@
 import sqlite3
 
+#Dictionary with day name for the table header on the dashboard. 'Today' is always at a[0]
 days_dict = {
     'Monday':   ['Today', 'Sunday', 'Saturday', 'Friday', 'Thursday', 'Wednesday', 'Tuesday'],
     'Sunday':   ['Today', 'Saturday', 'Friday', 'Thursday', 'Wednesday', 'Tuesday', 'Monday'],
@@ -11,6 +12,10 @@ days_dict = {
 }
 
 def get_week_history():
+    """
+    returns a list with 7 elements, each element representing 
+    the average weather data for each day in a week
+    """
     history = []
     for i in range(7):
         history.append(get_day_history(i))
