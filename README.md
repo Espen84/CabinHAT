@@ -66,6 +66,8 @@ See [CONTRIBUTE.md](https://github.com/Espen84/CabinHAT/blob/master/CONTRIBUTE.m
 
 + Fosse. Ingve
 
++ Holen. Marius
+
 + Oftedal. Espen Sivertsen
 
 ## Acknowledgements 
