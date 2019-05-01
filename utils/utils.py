@@ -30,7 +30,7 @@ def get_day_history(days_ago):
     """
     if days_ago < 0 or days_ago > 6:
         return None
-    conn = sqlite3.connect('db/cabinhat.db')
+    conn = sqlite3.connect('cabinhat.db')
     c = conn.cursor()
 
     if days_ago == 0:

@@ -32,7 +32,7 @@ while True:
     humid = sense.get_humidity()
     pressure = sense.get_pressure()
     
-    conn = sqlite3.connect('../db/cabinhat.db')
+    conn = sqlite3.connect('../cabinhat.db')
     c = conn.cursor()
     c.execute("INSERT INTO weather VALUES (:type, :value, DateTime('now'))", get_dict('Temp', temp))
     c.execute("INSERT INTO weather VALUES (:type, :value, DateTime('now'))", get_dict('Humid', humid))
