@@ -19,7 +19,7 @@ def index():
 def json():
     sense = SenseHat()
     
-    return jsonify(name='Vegard Alvsaker', telephone='454 82 059', temp=round(sense.get_temperature(),2), humidity=round(sense.get_humidity(),2), pressure=round(sense.get_pressure(),2))
+    return jsonify(temp=round(sense.get_temperature(),2), humidity=round(sense.get_humidity(),2), pressure=round(sense.get_pressure(),2))
 
 @app.route('/get_image')
 def get_image():

@@ -65,7 +65,7 @@
 
 
 	<div class="container border rounded py-2 px-4 mt-3">
-		<h1 class="display-4">Cabin dashboard for Vegard</h1>
+		<h1 class="display-4">Cabin dashboard</h1>
 		<button class="btn btn-sm btn-warning mb-2" onclick="refreshImage()">Refresh image</button>
 		<div class="row">
 			<img class="col-9" id="image"  src="/get_image">
@@ -120,13 +120,13 @@
 				</tr>
 				<tr>
 					<th scope="row">Humid</th>
-					<td>{{ history[0].humid }}%</td>
-					<td>{{ history[1].humid }}%</td>
-					<td>{{ history[2].humid }}%</td>
-					<td>{{ history[3].humid }}%</td>
-					<td>{{ history[4].humid }}%</td>
-					<td>{{ history[5].humid }}%</td>
-					<td>{{ history[6].humid }}%</td>
+					<td>{{ history[0].humid }} %</td>
+					<td>{{ history[1].humid }} %</td>
+					<td>{{ history[2].humid }} %</td>
+					<td>{{ history[3].humid }} %</td>
+					<td>{{ history[4].humid }} %</td>
+					<td>{{ history[5].humid }} %</td>
+					<td>{{ history[6].humid }} %</td>
 				</tr>
 				<tr>
 					<th scope="row">Pressure</th>
@@ -162,7 +162,6 @@ function refreshImage() {
 
 function getTemp() {
 	$.getJSON('/json', function(data) {
-		console.log(data);
 		$('#temp').text(data.temp);
 		$('#humidity').text(data.humidity);
 		$('#pressure').text(data.pressure);
