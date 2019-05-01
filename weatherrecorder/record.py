@@ -5,7 +5,7 @@ import time
 import datetime
 
 #if os.path.isfile('./cabinhat.db')
-conn = sqlite3.connect('../db/cabinhat.db')
+conn = sqlite3.connect('../cabinhat.db')
 sense = SenseHat()
 
 c = conn.cursor()
