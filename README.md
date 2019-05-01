@@ -63,7 +63,9 @@ software updates for those modules
 
 4. ``` cd ../ ```
 
-5. ``` python app.py ```
+5. ``` python app.py ``` This starts the webserver
+
+6. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
 
 ## Contribute
 
