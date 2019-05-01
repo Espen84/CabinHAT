@@ -53,7 +53,7 @@ This to help the user determine if there is something wrong at the location wher
  
 ## Running
 This software is meant to be run on a RaspberryPi with a SenseHAT module and a PiCam module. Make sure you've got the latest
-software updates for those modules
+software updates for those modules. The web-framework is Flask. Install Flask by ```sudo pip3 install Flask```.
 
 1. ```git clone https://github.com/Espen84/CabinHAT ```
 
@@ -61,12 +61,13 @@ software updates for those modules
 
 3. ``` python record.py``` This starts the program which records history of the weatherdata
 
-4. ``` cd ../ ```
+4. open a new terminal and cd to root of the repository
 
 5. ``` python app.py ``` This starts the webserver
 
 6. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
 
+DISCLAIMER: Port forwarding is done at your own risk. It is not recommended using Flask's webserver.
 ## Contribute
 
 Want to contribute to the project? 
