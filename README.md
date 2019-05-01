@@ -51,7 +51,19 @@ This to help the user determine if there is something wrong at the location wher
 + [ARM CPUs](https://www.raspberrypi.org/documentation/faqs/) used in Raspberry Pi, are not Open Source. 
 
  
-## Installation
+## Running
+This software is meant to be run on a RaspberryPi with a SenseHAT module and a PiCam module. Make sure you've got the latest
+software updates for those modules
+
+1. ```git clone https://github.com/Espen84/CabinHAT ```
+
+2. ```cd CabinHAT/weatherrecorder ```
+
+3. ``` python record.py``` This starts the program which records history of the weatherdata
+
+4. ``` cd ../ ```
+
+5. ``` python app.py ```
 
 ## Contribute
 
