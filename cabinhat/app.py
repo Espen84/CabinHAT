@@ -31,9 +31,9 @@ def json():
 def get_image():
     camera = PiCamera()
 
-    camera.capture("ronny.jpg")
+    camera.capture("photo.jpg")
     camera.close()
-    return send_file('ronny.jpg', mimetype='image/gif')
+    return send_file('photo.jpg', mimetype='image/gif')
 
 
 if __name__ == '__main__':
