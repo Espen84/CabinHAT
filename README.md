@@ -3,7 +3,7 @@ Open Source Project using Raspberry Pi's with sense HAT modules to read temperat
 
 ![alt text][Pi picture]
 
-[Pi picture]: https://github.com/Espen84/CabinHAT/tree/master/pic/nodeRED/Pi bilde.jpg "Pi picture"
+[Pi picture]: https://github.com/Espen84/CabinHAT/blob/master/pic/nodeRED/Pi%20bilde.jpg "Pi picture"
 
 ## Content
 
