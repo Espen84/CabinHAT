@@ -1,8 +1,14 @@
 from flask import Flask, jsonify, render_template, send_file
 import datetime
-from sense_hat import SenseHat
-from picamera.camera import PiCamera
-from utils.utils import get_week_history, days_dict
+try: 
+    from sense_hat import SenseHat
+except:
+    from cabinhat.not_sense_hat.not_sense_hat import SenseHat
+try:
+    from picamera.camera import PiCamera
+except:
+    from cabinhat.not_picam.not_picam import PiCamera
+from cabinhat.utils.utils import get_week_history, days_dict
 
 app = Flask(__name__)
 
@@ -25,9 +31,9 @@ def json():
 def get_image():
     camera = PiCamera()
 
-    camera.capture("ronny.jpg")
+    camera.capture("photo.jpg")
     camera.close()
-    return send_file('ronny.jpg', mimetype='image/gif')
+    return send_file('photo.jpg', mimetype='image/gif')
 
 
 if __name__ == '__main__':
