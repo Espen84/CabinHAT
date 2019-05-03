@@ -51,7 +51,7 @@ This to help the user determine if there is something wrong at the location wher
 + [ARM CPUs](https://www.raspberrypi.org/documentation/faqs/) used in Raspberry Pi, are not Open Source. 
 
  
-## Running
+## Installing and running
 This software is meant to be run on a RaspberryPi with a SenseHAT module and a PiCam module. Make sure you've got the latest
 software updates for those modules. The web-framework is Flask. Install Flask by ```sudo pip3 install Flask```.
 
