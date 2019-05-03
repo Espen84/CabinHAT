@@ -53,7 +53,8 @@ this open source project.
 
 The group initially decided to use the GPL License, but found that
 the BSD 3-Clause License would be a better fit. The reason for this, was
-mainly because the GPL License is known to have one-way-compatability
+because we did not see the need for copyleft in this project. The GPL License is also 
+known to have one-way-compatability
 with other licenses. This means that the BSD 3-Clause License will be a safer
 choice because of third-party-licenses in the project, and for future modified distributions.
 
