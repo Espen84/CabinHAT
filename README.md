@@ -2,6 +2,7 @@
 Open Source Project using Raspberry Pi's with sense HAT modules to read temperature, and other relevant data to check and perform maintenance on cabin.
 
 ![alt text][Pi picture]
+
 [Pi picture]: https://github.com/Espen84/CabinHAT/tree/master/pic/nodeRED/Pi bilde.jpg "Pi picture"
 
 ## Content
