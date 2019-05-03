@@ -67,22 +67,20 @@ software updates for those modules.
 
 1. ```git clone https://github.com/Espen84/CabinHAT ```
 
-2. ```cd CabinHAT``` and run ```pip3 install -e .```. This will install Flask and package the python files, making imports more trivial
+2. ```cd CabinHAT``` and run ```pip3 install -e .``` This will install Flask and package the python files, making imports more trivial
 
-3. ```cd weatherrecorder ```
+3. ```cd weatherrecorder ``` and run ``` python3 record.py``` This starts the program which records history of the weatherdata
 
-4. ``` python3 record.py``` This starts the program which records history of the weatherdata
+4. Open a new terminal window and cd to root of the repository
 
-5. Open a new terminal window and cd to root of the repository
+5. ``` python3 app.py ``` This starts the webserver
 
-6. ``` python3 app.py ``` This starts the webserver
-
-7. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
+6. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
 
 **DISCLAIMER:** Port forwarding is done at your own risk. It is not recommended using Flask's webserver.
 
 ### Running on other than RASBIAN/Raspberry Pi
-Following steps 1-7 is tested on Windows 10 and Mac OS (in addition to on Raspberry PI). The program will import dummy emulators, reporting random sensor data.
+Following steps 1-6 is tested on Windows 10 and Mac OS (in addition to on Raspberry PI). The program will import dummy emulators, reporting random sensor data.
 
 
 ## Contribute
