@@ -27,7 +27,7 @@ Open Source Project using Raspberry Pi's with sense HAT modules to read temperat
  
 ## Intention
 
-The purpose of this project is to provide an open source solution for monitoring the status of a cabin, or whatever the user desires to monitor.  CabinHAT is a product that uses [Raspberry Pi](https://www.raspberrypi.org/),
+The purpose of this project is to provide an open source solution for monitoring the status of your cabin, or whatever the user desires to monitor.  CabinHAT is a product that uses [Raspberry Pi](https://www.raspberrypi.org/),
 [Sense HAT](https://www.raspberrypi.org/products/sense-hat/),
 [Flask](http://flask.pocoo.org/) and 
 [SQLite](https://www.sqlite.org/index.html), to deliver data such as:
@@ -67,7 +67,7 @@ software updates for those modules. The web-framework is Flask. Install Flask by
 
 3. ``` python record.py``` This starts the program which records history of the weatherdata
 
-4. open a new terminal and cd to root of the repository
+4. Open a new terminal and cd to root of the repository
 
 5. ``` python app.py ``` This starts the webserver
 
