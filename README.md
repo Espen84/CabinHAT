@@ -39,6 +39,8 @@ This to help the user determine if there is something wrong at the location wher
 ### Our license 
 [GNU General Public License v3.0](https://github.com/Espen84/CabinHAT/blob/master/LICENSE)
 
+MER OM LICENSE HER, HVORFOR DENNE? ER DEN KOMPATIBEL MED DE ANDRE?
+
 ### Third party licenses:
 
 + [Python 2.2 and above](https://docs.python.org/3/license.html) use a GPL compatible license.  
