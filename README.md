@@ -37,7 +37,7 @@ This to help the user determine if there is something wrong at the location wher
 ## License
 
 ### Our license 
-[GNU General Public License v3.0](https://github.com/Espen84/CabinHAT/blob/master/LICENSE)
+[BSD 3-Clause License](https://github.com/Espen84/CabinHAT/blob/master/LICENSE.md)
 
 MER OM LICENSE HER, HVORFOR DENNE? ER DEN KOMPATIBEL MED DE ANDRE?
 
