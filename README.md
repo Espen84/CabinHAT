@@ -47,7 +47,16 @@ This to help the user determine if there is something wrong at the location wher
 ### Our license 
 [BSD 3-Clause License](https://github.com/Espen84/CabinHAT/blob/master/LICENSE.md)
 
-MER OM LICENSE HER, HVORFOR DENNE? ER DEN KOMPATIBEL MED DE ANDRE?
+We have decided to go with the BSD 3-Clause License, as this
+is a lightweight and permissive license, which we find fitting for
+this open source project
+
+The group initially decided to use the GPL License, but found that
+the BSD license would be a better fit. The reason for this, was
+firstly because GPL is known to have a lot of one-way-compatability
+with other licenses. This means that the BSD License would be a safer
+choice, firstly because of third-part-licenses, but also for future 
+contributors or for modified versions.
 
 ### Third party licenses:
 
