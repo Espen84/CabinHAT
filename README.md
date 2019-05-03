@@ -14,7 +14,7 @@ Open Source Project using Raspberry Pi's with sense HAT modules to read temperat
 1. [Technologies](https://github.com/Espen84/CabinHAT#technologies)
 2. [Intent](https://github.com/Espen84/CabinHAT#intent)
 3. [License](https://github.com/Espen84/CabinHAT#license)
-4. [Installation](https://github.com/Espen84/CabinHAT#installation)
+4. [Installing and running](https://github.com/Espen84/CabinHAT#installing-and-running)
 5. [Contribute](https://github.com/Espen84/CabinHAT#contribute)
 6. [Developers](https://github.com/Espen84/CabinHAT#developers)
 7. [Acknowledgements](https://github.com/Espen84/CabinHAT#acknowledgements)
@@ -71,22 +71,27 @@ choice because of third-party-licenses in the project, and for future modified d
 
  
 ## Installing and running
-This software is meant to be run on a RaspberryPi with a SenseHAT module and a PiCam module. Make sure you've got the latest
-software updates for those modules. The web-framework is Flask. Install Flask by ```sudo pip3 install Flask```.
+This software is meant to be run on a RaspberryPi with a [Sense HAT module](https://www.raspberrypi.org/documentation/hardware/sense-hat/) and a [Picamera module](https://picamera.readthedocs.io/en/release-1.13/install.html). Make sure you've got the latest
+software updates for those modules.
 
 1. ```git clone https://github.com/Espen84/CabinHAT ```
 
-2. ```cd CabinHAT/weatherrecorder ```
+2. ```cd CabinHAT``` and run ```pip3 install -e .``` This will install Flask and package the python files, making imports more trivial
 
-3. ``` python record.py``` This starts the program which records history of the weatherdata
+3. ```cd weatherrecorder ``` and run ``` python3 record.py``` This starts the program which records history of the weatherdata
 
-4. Open a new terminal and cd to root of the repository
+4. Open a new terminal window and cd to root of the repository
 
-5. ``` python app.py ``` This starts the webserver
+5. ``` python3 app.py ``` This starts the webserver
 
 6. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
 
-DISCLAIMER: Port forwarding is done at your own risk. It is not recommended using Flask's webserver.
+**DISCLAIMER:** Port forwarding is done at your own risk. It is not recommended using Flask's webserver.
+
+### Running on other than RASBIAN/Raspberry Pi
+Following steps 1-6 is tested on Windows 10 and Mac OS (in addition to on Raspberry PI). The program will import dummy emulators, reporting random sensor data.
+
+
 ## Contribute
 
 Want to contribute to the project? 
@@ -94,15 +99,15 @@ See [CONTRIBUTE.md](https://github.com/Espen84/CabinHAT/blob/master/CONTRIBUTE.m
 
 ## Developers 
 
-+ Aarsheim. Gorm-Erik
++ Aarsheim. Gorm-Erik [@gormaar](https://github.com/gormaar)
 
-+ Alvsaker. Vegard
++ Alvsaker. Vegard [@vegardalvsaker](https://github.com/vegardalvsaker)
 
-+ Fosse. Ingve
++ Fosse. Ingve [@ingvefosse](https://github.com/ingvefosse)
 
-+ Holen. Marius
++ Holen. Marius [@mariusholen](https://github.com/mariusholen)
 
-+ Oftedal. Espen Sivertsen
++ Oftedal. Espen Sivertsen [@Espen84](https://github.com/Espen84)
 
 ## Acknowledgements 
 

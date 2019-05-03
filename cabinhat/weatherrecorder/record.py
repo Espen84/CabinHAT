@@ -1,4 +1,7 @@
-from sense_hat import SenseHat
+try:
+    from sense_hat import SenseHat
+except:
+    from cabinhat.not_sense_hat.not_sense_hat import SenseHat
 import sqlite3
 import os
 import time
