@@ -41,6 +41,7 @@ If you find yourself wishing for a feature that doesn't exist in CabinHAT, you m
   INSERT LINK HERE
 
 **For small changes or fixes**
+
 Seeing as the CabinHAT project is small, we handle small changes and corrections by the same process as big ones. However, the smaller the change, the faster it will be implemented. As a rule of thumb, changes are obvious fixes if they do not introduce any new functionality or creative thinking. If the change does not affect functionality, some likely examples include the following:
 * Spelling / grammar fixes
 * Typo corrections, white space and formatting changes
