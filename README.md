@@ -1,5 +1,5 @@
 # CabinHAT
-Open Source Project using Raspberry Pi's with sense HAT modules to read temperature, and other relevant data to check and perform maintenance on cabin.
+CabinHAT is an Open Source Project using Raspberry Pi with Sense HAT and Raspberry Pi camera module. Sense HAT is used to read temperature, humidity and air pressure. Camera module is used to take pictures when desired.
 
 ![alt text][Pi picture]
 
@@ -62,8 +62,14 @@ MER OM LICENSE HER, HVORFOR DENNE? ER DEN KOMPATIBEL MED DE ANDRE?
 
  
 ## Installing and running
-This software is meant to be run on a RaspberryPi with a [Sense HAT module](https://www.raspberrypi.org/documentation/hardware/sense-hat/) and a [Picamera module](https://picamera.readthedocs.io/en/release-1.13/install.html). Make sure you've got the latest
-software updates for those modules.
+This software is meant to be run on a Raspbian device such as RaspberryPi with a [Sense HAT module](https://www.raspberrypi.org/documentation/hardware/sense-hat/) and a [Picamera module](https://picamera.readthedocs.io/en/release-1.13/install.html). 
+
+Make sure camera and Sense HAT is enabled before doing step 1-6. This can be done running the following script in terminal: 
+``` 
+$ sudo apt-get update 
+$ sudo apt-get install python3-picamera 
+$ sudo apt-get install sense-hat 
+```     
 
 1. ```git clone https://github.com/Espen84/CabinHAT ```
 
@@ -77,7 +83,9 @@ software updates for those modules.
 
 6. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
 
-**DISCLAIMER:** Port forwarding is done at your own risk. It is not recommended using Flask's webserver.
+These steps will create a Flask webserver and run it on your computer, but will only make it accessible from within the local network. Doing Port Forwarding at port :5000 means it can be accessed from outside network. Ask your internet provider how to do this. The Raspberry Pi can also be remotely controlled by installing VNC-software such as [VNC-viewer.](https://www.realvnc.com/en/raspberrypi/) 
+
+**DISCLAIMER:** Port forwarding and remote access is done at your own risk. We take no responsibility. 
 
 ### Running on other than RASBIAN/Raspberry Pi
 Following steps 1-6 is tested on Windows 10 and Mac OS (in addition to on Raspberry PI). The program will import dummy emulators, reporting random sensor data.
