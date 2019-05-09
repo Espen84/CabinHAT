@@ -71,8 +71,14 @@ choice because of third-party-licenses in the project, and for future modified d
 
  
 ## Installing and running
-This software is meant to be run on a RaspberryPi with a [Sense HAT module](https://www.raspberrypi.org/documentation/hardware/sense-hat/) and a [Picamera module](https://picamera.readthedocs.io/en/release-1.13/install.html). Make sure you've got the latest
-software updates for those modules.
+This software is meant to be run on a Raspbian device such as RaspberryPi with a [Sense HAT module](https://www.raspberrypi.org/documentation/hardware/sense-hat/) and a [Picamera module](https://picamera.readthedocs.io/en/release-1.13/install.html). 
+
+Make sure camera and Sense HAT is enabled before doing step 1-6. This can be done running the following script in terminal: 
+``` 
+$ sudo apt-get update 
+$ sudo apt-get install python3-picamera 
+$ sudo apt-get install sense-hat 
+```
 
 1. ```git clone https://github.com/Espen84/CabinHAT ```
 
@@ -86,7 +92,9 @@ software updates for those modules.
 
 6. Go to ``` 0.0.0.0:5000 ``` in a browser to see the dashboard
 
-**DISCLAIMER:** Port forwarding is done at your own risk. It is not recommended using Flask's webserver.
+These steps will create a Flask webserver and run it on your computer, but will only make it accessible from within the local network. Opening Port Forwarding at port :5000 means it can be accessed from outside network. Check with your internet provider how to do this. The Raspberry Pi can also be remotely controlled by installing VNC-software such as [VNC-viewer.](https://www.realvnc.com/en/raspberrypi/) 
+
+**DISCLAIMER:** Port forwarding and remote access is done at your own risk. We take no responsibility.
 
 ### Running on other than RASBIAN/Raspberry Pi
 Following steps 1-6 is tested on Windows 10 and Mac OS (in addition to on Raspberry PI). The program will import dummy emulators, reporting random sensor data.
