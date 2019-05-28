@@ -12,7 +12,7 @@ CabinHAT is an open source project and we would love to receive contributions fr
 
 ## Ground Rules
 * Ensure Raspbian compatibility for every change that's accepted. 
-* Ensure that code that goes into core meets [all requirements](https://github.com/Espen84/CabinHAT/blob/master/SYSARCH-CODE-REQUIREMENTS.md)
+* Ensure that code that goes into core meets [all requirements](.../blob/master/SYSARCH-CODE-REQUIREMENTS)
 * Create issues for any major changes and enhancements that you wish to make. The same principle goes for added functions. 
 * Discuss things transparently and get community or developer feedback.
 * If your contribution does not require a class of its own, please add the code into existing classes.
@@ -37,8 +37,7 @@ If you find yourself wishing for a feature that doesn't exist in CabinHAT, you m
 
 * Create your own fork of the code
 * Do the changes in your fork
-* If you like the change and think the project could use it: *Be sure you have followed the code style for the project.* 
-  INSERT LINK HERE
+* If you like the change and think the project could use it: *Be sure you have followed the code style for the project as seen [here](.../blob/master/SYSARCH-CODE-REQUIREMENTS)* 
 
 **For small changes or fixes**
 
